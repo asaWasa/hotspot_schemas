@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message RegisterPersonRequest {
+  required string username = 1;
+  optional string email = 2;
+  required string password = 3;
+}
+
+message RegisterPersonResponse {
+  required bool success = 1;
+  required string message = 2;
+}

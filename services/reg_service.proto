@@ -1,0 +1,7 @@
+syntax = "proto2";
+import "services/reg_service/registration.proto";
+package services.reg_service;
+
+service RegistrationService {
+  rpc RegisterPerson (RegisterPersonRequest) returns (RegisterPersonResponse);
+}
